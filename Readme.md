@@ -10,7 +10,7 @@ User can download encodded movie.
 + User must not turn off web browser.(User can't get encodded movie url)
 + If encoding fps(Frame Per Second) is higher than original movie fps, Mencoder may stopped before encoding.
 + MEncoder setted using NanumGothic font default. If you want to use other font, Change font option to other font in mp4convert file.
-ㄴ How to download NanumGothic 
+How to download NanumGothic 
 
 (IN CENTOS 6.3)
 > wget http://static.campaign.naver.com/0/hangeul/renew/download/NanumFont_TTF.zip
