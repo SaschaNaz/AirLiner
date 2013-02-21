@@ -1,4 +1,4 @@
-<Web Encoding System>
+<h1>Web Encoding System</h1>
 
 User upload movie with subtitle in service.html.
 If user click submit button, Send movie to upload.php.
@@ -14,10 +14,17 @@ User can download encodded movie.
 
 (IN CENTOS 6.3)
 > wget http://static.campaign.naver.com/0/hangeul/renew/download/NanumFont_TTF.zip
+
 > unzip NanumFont_TTF.zip
+
 > mkdir /usr/share/fonts/nanum
+
 > cp *.ttf /usr/share/fonts/nanum/
+
 > fc-cache -r
 
+
+
 License : BSD
+
 Developer : Taylor Starfield - taylor@kloa.kr
