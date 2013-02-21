@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>AirLiner Test</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h3>인코딩 시스템 테스트 버전</h3>
+<h5>mp4,mkv,mov,m4v,avi 파일과 smi 자막을 넣어주시면 인코딩해드립니다.</h4>
+<h5>인코딩 완료 메세지가 뜨기 전에 브라우저를 종료하지 마세요.</h4>
+<h5>인코딩 완료까지 약 15분에서 30분 정도가 소요됩니다.</h4>
+<h6>본 시스템은 Cloud Square 에서 제공되며, 본 시스템을 용도외로 사용하거나 사용하면서 발생할 수 있는 모든 문제에 대한  책임은 유저에게 있습니다. 또한 악의적인 목적으로 시스템에 해를 끼칠경우 법적인 책임을 물을 수 있습니다.</h6>
+<br>
+<form enctype="multipart/form-data" action="upload.php" method="POST">
+    동영상: <input name="file" type="file" /><br>
+    자막: <input name="subtitle" type="file" /><br><br>
+    해상도<br> 가로:<input name="width" type="text" value="1280" />
+    세로:<input name="height" type="text" value="720" /><br>
+    <br>
+    <input type="submit" value="in코딩" onclick="submitclicked()" />
+</form>
+<a>버전 0.0.1</a><br>
+<a>원본동영상 프레임이 23 이상일 경우 까지 에러 안나게 수정 - 레노우카님</a><br>
+<a>mkv업로드 가능하게 수정 - 로롱님</a>
+<br>
+<h5 id=alert color=red></h5>
+</body>
+<script>
+function submitclicked()
+{
+	document.getElementById('alert').innerHTML = "인코딩 시작<br><br>브라우저를 종료하지 마세요!";
+}
+</script>
+</html>

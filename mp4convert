@@ -1,0 +1,1 @@
+mencoder $1 -o ${1/.mp4/}_enc.mp4 -vf-add scale=$2:$3 -ofps 23 -faacopts mpeg=4:object=2:raw:br=128 -oac faac -ovc x264 -sws 9 -x264encopts nocabac:level_idc=30:bframes=0:global_header:threads=8:subq=5:frameref=6:partitions=all:trellis=1:chroma_me:me=umh:bitrate=800 -of lavf -sub ${1/.mp4/}.smi -font 나눔고딕 -utf8 -subpos 97 -subfont-text-scale 3 -subfont-blur 1 -subfont-outline 2
